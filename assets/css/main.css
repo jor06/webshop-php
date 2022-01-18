@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.header {
+    height: 150px;
+    color: whitesmoke;
+    background-color: grey;
+    width: 100%;
+    background: url('../images/webshop/header.png') no-repeat;
+    background-size: contain;
+}
+
+.content {
+    position: relative;
+    min-height: 100vh;
+    background: url('../images/webshop/header.jpg') no-repeat;
+    background-size: cover;
+}
+
+#shop {
+    background-image: url('../images/webshop/main.jpg');
+    background-size: contain;
+}
+
+.content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+.footer {
+    height: 100px;
+    background-color: grey;
+    width: 100%;
+    color: darkslategray;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+
+.cart-icon {
+    cursor: pointer;
+    color: whitesmoke
+}
+
+.navbar {
+    color: whitesmoke;
+    
+}
+
+.layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    display: none;
+    z-index: 1000;
+}
+#topBtn {
+    bottom: 20px; 
+    color: white; 
+    cursor: pointer; 
+    padding: 5px; 
+    border-radius: 10px;
+    font-size: 18px; 
+    background-color: #555; 
+
+  }
+  
+  #topBtn:hover {
+    background-color: silver; 
+    color: black;
+  }

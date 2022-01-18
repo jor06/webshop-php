@@ -1,0 +1,14 @@
+{
+    "name": "jordy/php-webshop",
+    "description": "PHP wenshop",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Jordy Hoekstra",
+            "email": "jordy-hoekstra@hotmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
