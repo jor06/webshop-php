@@ -76,3 +76,7 @@ body {
     background-color: silver; 
     color: black;
   }
+
+.form-label {
+    color: white;
+}

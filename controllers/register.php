@@ -2,24 +2,13 @@
 
 function index($view)
 {
-
     return require $_SERVER['DOCUMENT_ROOT'] . '/assets/views/' . $view . '.view.php';
 }
 
-function handleForm($view)
+function registerUser()
 {
-    if ($_SERVER['REQUEST_METHOD'] != 'POST') {
-        die('go away! only posting here!');
-    }
-
     $user = $_POST;
+    $user['password'] = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-    if (array_key_exists('id', $_GET) && (int)$_GET['id'] > 0) {
-        update($user, 'user', $_GET['id']);
-    } else {
-        $user['created_at'] = date('Y-m-d H:i:s');
-
-        insert($user, 'users');
-    }
+    insert($user, 'users');
 }
-

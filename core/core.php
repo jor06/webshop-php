@@ -87,7 +87,7 @@ function getPage()
 
 function getFunction()
 {
-    return array_key_exists('action', $_GET) ? $_GET['action'] : 'index';
+    return array_key_exists('function', $_GET) ? $_GET['function'] : 'index';
 }
 
 function render($view, $data = array())

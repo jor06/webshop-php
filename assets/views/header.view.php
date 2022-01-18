@@ -18,9 +18,9 @@
         </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="?page=home">Home</a>
+      <a class="nav-item nav-link" href="?page=home">Home</a>
       <a class="nav-item nav-link" href="?page=contact">Contact Us</a>
-      <a class="nav-item nav-link" href="?page=admin">Admin</a>
+      <a class="nav-item nav-link" href="?page=addproducts">Add products</a>
       <a class="nav-item nav-link" href="?page=register">Register</a>
       <a class="nav-item nav-link" href="?page=login">Login</a>
     </div>

@@ -1,6 +1,6 @@
 <?php
 
-function save() {
+function index() {
 
 }
 
@@ -8,6 +8,18 @@ function show($id) {
 
 }
 
-function delete() {
+function store() {
+
+}
+
+function updateUser() {
+    
+}
+
+function edit($id) {
+    
+}
+
+function delete($id) {
     
 }
