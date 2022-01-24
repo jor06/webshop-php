@@ -26,8 +26,6 @@ Vue.component('cart-form', {
             $('.cart').toggle({
                 direction: 'right',
             });
-
-            // axios({ })
         },
 
         closeShoppingCart() {
@@ -48,10 +46,19 @@ Vue.component('cart-form', {
                     <img :src="'/assets/images/webshop/' + product.image" width="50">
                 </div>
                 <div class="col-md-2">{{ product.amount }}</div>
-                <div class="col-md-3 text-end">{{ product.cost }}</div>
-                <div class="col-md-3" text-end>{{ product.cost * product.amount }}</div>
+                <div class="col-md-3 text-end">{{ product.price }}</div>
+                <div class="col-md-3" text-end>{{ product.price * product.amount }}</div>
             </div>
 
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-2">{{ cart.totalProducts }}</div>
+                <div class="col-md-3"></div>
+                <div class="col-md-3">&euro; {{ cart.totalPrice }}</div>
+
+            </div>
+
+                    
             <div class="row">
                 <div class="col-md-12 mt-3">
                     <button @click="checkout">Checkout</button>

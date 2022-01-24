@@ -1,4 +1,3 @@
-<!-- HEADER VIEW PHP -->
 <header class="header">
     <div class="row">
         <div class="col-md-3"></div>

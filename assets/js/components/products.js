@@ -25,7 +25,7 @@ Vue.component('products', {
 
             axios({
                 method: 'GET',
-                url: '?page=home&action=getdata',
+                url: '?page=home&function=getdata',
                 headers: {
                     "X-Requested-With": "XMLHttpRequest"
                 }

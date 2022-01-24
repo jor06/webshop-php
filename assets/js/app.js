@@ -47,7 +47,7 @@ var app = new Vue({
             if (foundIndex === false) {
                 this.cart.products.push({
                     id: article.id,
-                    cost: article.cost,
+                    price: article.price,
                     name: article.name,
                     image: article.image,
                     amount: 1,
@@ -66,7 +66,7 @@ var app = new Vue({
             let totalPrice = 0;
 
             this.cart.products.forEach(article => {
-                totalPrice += (article.amount * article.cost);
+                totalPrice += (article.amount * article.price);
             });
 
             return totalPrice;
@@ -95,7 +95,6 @@ var app = new Vue({
 
             form.append('cart', JSON.stringify(this.cart))
             
-            // Header must be set to tell back-end that this is an Ajax call
             axios.post('?page=checkout&action=savecard', form, {
                 headers: {
                     "X-Requested-With": "XMLHttpRequest"
@@ -126,8 +125,8 @@ function scrollFunction() {
 }
 
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
 }
 Vue.config.devtools = true
 Vue.config.productionTip = false

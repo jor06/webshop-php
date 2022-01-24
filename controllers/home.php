@@ -19,7 +19,7 @@ function getData()
 
     while ($meat = $res->fetch(PDO::FETCH_ASSOC)) {
         $meats[$index] = $meat;
-        $meats[$index]['price'] = (float)$meat['price'];
+        $meats[$index]['price'] = (int)$meat['price'];
         $meats[$index]['stock'] = (int)$meat['stock'];
 
         if (count($shoppingCart)) {
@@ -37,6 +37,11 @@ function getData()
     echo json_encode([
         'success'   => true,
         'meats'    => $meats,
-        'what'      => 'kiekeboo!',
     ]);
 }
+
+function loginSucces()
+{
+    return require $_SERVER['DOCUMENT_ROOT'] . '/assets/views/home.view.php';
+};
+
