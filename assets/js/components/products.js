@@ -14,6 +14,9 @@ Vue.component('products', {
     },
 
     methods: {
+        goToDetails() {
+                window.location.href('/details')
+        },
         addToCart(meat) {
             meat.stock--;
 
@@ -50,7 +53,7 @@ Vue.component('products', {
                         <p>Price: {{ meat.price }},-</p>
                         <p>Stock: {{ meat.stock }}</p>
                         <input type="button" class="btn btn-danger" :disabled="meat.stock === 0" @click="addToCart(meat)" value="Order">
-                        <input type="button" class="btn btn-danger" :disabled="meat.stock === 0" @click="" value="Details">
+                        <input type="button" class="btn btn-danger" onclick="window.location.href='/?page=details&action=getData" value="Details">
                         </div>
                 </div>
             </div>

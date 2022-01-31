@@ -1,6 +1,7 @@
 <div class="container" id="shop">
-<form method="POST" action="?page=register&function=registerUser">
+        <cart-form ref="cartComponent" class="cart"></cart-form>
 
+<form method="POST" action="?page=register&function=registerUser">
 <div class="mb-3">
         <label for="user_name" class="form-label">User Name</label>
         <input type="text" class="form-control" name="user_name" placeholder="User Name">

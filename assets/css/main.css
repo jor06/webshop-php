@@ -80,3 +80,7 @@ body {
 .form-label {
     color: white;
 }
+
+#title {
+    text-decoration: white;
+}
