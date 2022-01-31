@@ -1,6 +1,8 @@
 <h1>User Login</h1>
 
-<div class="container">
+<div class="container" id="shop">
+<cart-form ref="cartComponent" class="cart"></cart-form>
+
     <form method="POST" action="?page=login&action=loginUser" onsubmit="return false">
     <div class="mb-1">
         <label for="user_name" class="form-label">User Name</label>
